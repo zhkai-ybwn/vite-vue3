@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "仓耳渔阳体 W02";
+  font-weight: 400;
+  src:
+    url("//at.alicdn.com/wf/webfont/SMiqV6dHcc9P/tkNkd_ks4Z4YplmENnMsR.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/SMiqV6dHcc9P/mEkmVffjVSMHjoj_Bznwm.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'd7';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/33297/digital7-webfont.woff2') format('woff2'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/33297/digital7-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
