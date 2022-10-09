@@ -45,7 +45,7 @@ const routes = [
             {
                 path: 'progress-bar',
                 name: '进度条',
-                meta: { icon: 'icon-tupian' },
+                meta: { icon: 'icon-jindu' },
                 component: () => import('../views/css-demo/progress/index.vue'),
             },
         ],

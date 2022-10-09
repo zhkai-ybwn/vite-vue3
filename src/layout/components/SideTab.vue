@@ -117,7 +117,7 @@ export default ({
 
         &::after {
           position: absolute;
-          right: -10px;
+          left: 90px;
           top: 0;
           content: "";
           width: 2px;

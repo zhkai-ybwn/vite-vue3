@@ -1,15 +1,24 @@
 <template>
     <div class="view-login">
+        <Shuffling :list="list">
+        </Shuffling>
     </div>
 </template>
 <script>
+import ProgressBarLine from '../../../components/css-component/progress/ProgressBarLine.vue';
+import MultiProgressBar from '../../../components/css-component/progress/MultiProgressBar.vue';
+import Shuffling from '../../../components/css-component/Shuffling.vue';
 
 export default ({
     components: {
+        Shuffling,
     },
     setup() {
-        const data = [{ name: '巡检工单', value: 100, color: '#61A3FF' }, { name: '告警工单', value: 30, color: '#FFC378' }, { name: '异常工单', value: 20, color: '#FF6060' }];
-        return { data };
+        const list = [
+            { component: ProgressBarLine, name: '进度条' },
+            { component: MultiProgressBar, name: '多段进度条' },
+        ];
+        return { list };
     },
 });
 </script>
@@ -22,11 +31,10 @@ export default ({
   /* 弹性盒子模型 */
   display: flex;
 
-  /* 限免两个属性是让body里的子类居中 */
+  /* 下面两个属性是让body里的子类居中 */
   justify-content: center;
   align-items: center;
-  background-color: #011f49;
-  //   background-color: #d9afd9;
-  //   background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
 }
 </style>

@@ -2,9 +2,9 @@
   font-family: "iconfont"; /* Project id 3623914 */
   /* Color fonts */
   src: 
-       url('iconfont.woff2?t=1662702578419') format('woff2'),
-       url('iconfont.woff?t=1662702578419') format('woff'),
-       url('iconfont.ttf?t=1662702578419') format('truetype');
+       url('iconfont.woff2?t=1665279422872') format('woff2'),
+       url('iconfont.woff?t=1665279422872') format('woff'),
+       url('iconfont.ttf?t=1665279422872') format('truetype');
 }
 
 .iconfont {
@@ -15,32 +15,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-jindu:before {
+  content: "\ecac";
+}
+
 .icon-tupian:before {
   content: "\e617";
-}
-
-.icon-tubiaoku:before {
-  content: "\e6bf";
-}
-
-.icon-weibo:before {
-  content: "\e8bb";
-}
-
-.icon-90:before {
-  content: "\e67a";
-}
-
-.icon-qq:before {
-  content: "\e604";
-}
-
-.icon-facebookfacebook51:before {
-  content: "\e605";
-}
-
-.icon-weixin:before {
-  content: "\e614";
 }
 
 .icon-qiapian:before {
@@ -49,10 +29,6 @@
 
 .icon-zhuye:before {
   content: "\e710";
-}
-
-.icon-kapian:before {
-  content: "\eddb";
 }
 
 .icon-denglu:before {
