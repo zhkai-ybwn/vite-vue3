@@ -10,7 +10,9 @@
 </template>
 
 <script>
-import { shallowRef } from 'vue';
+import {
+    onMounted, shallowRef, ref, onUnmounted,
+} from 'vue';
 
 export default ({
     props: {
@@ -24,6 +26,19 @@ export default ({
         const showToBigBox = (item) => {
             currentComponent.value = item.component;
         };
+        const currentIndex = ref(0);
+        const switchComponent = (() => {
+            currentComponent.value = props.list[currentIndex.value % props.list.length].component;
+        });
+        onMounted(() => {
+            setInterval(() => {
+                currentIndex.value += 1;
+                switchComponent();
+            }, 3000);
+        });
+        onUnmounted(() => {
+            clearInterval();
+        });
         return { currentComponent, showToBigBox };
     },
 });
@@ -33,7 +48,9 @@ export default ({
   width: 800px;
   height: 400px;
   display: flex;
+  //   均匀排列每个元素，每个元素之间的间隔相等
   justify-content: space-evenly;
+  // 超出容器部分隐藏
   overflow: hidden;
 
   .right-component {
@@ -50,7 +67,6 @@ export default ({
 
     span {
       color: rgb(255 255 255 / 60%);
-      text-decoration: none;
       padding: 12px 20px;
       cursor: pointer;
     }
