@@ -7,6 +7,7 @@
 <script>
 import ProgressBarLine from '../../../components/css-component/progress/ProgressBarLine.vue';
 import MultiProgressBar from '../../../components/css-component/progress/MultiProgressBar.vue';
+import CircularProgressBarVue from '../../../components/css-component/progress/CircularProgressBar.vue';
 import Shuffling from '../../../components/css-component/Shuffling.vue';
 
 export default ({
@@ -17,6 +18,7 @@ export default ({
         const list = [
             { component: ProgressBarLine, name: '进度条' },
             { component: MultiProgressBar, name: '多段进度条' },
+            { component: CircularProgressBarVue, name: '圆环进度条' },
         ];
         return { list };
     },

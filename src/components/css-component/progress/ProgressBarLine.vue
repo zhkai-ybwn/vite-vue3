@@ -1,3 +1,4 @@
+// 进度条
 <template>
     <div class="container" :style="{width: width + 'px'}">
         <div class="progress progress-moved" :style="{backgroundColor: colorBack}">
@@ -47,7 +48,7 @@ export default ({
   }
 
   100% {
-    width: 100%;
+    width: 20%;
     background: #f3c623;
     box-shadow: 0 0 40px #f3c623;
   }
@@ -60,16 +61,15 @@ export default ({
 
   .progress {
     width: 100%;
-    border-radius: 30px;
 
     .progress-bar {
-      border-radius: 30px;
       transition: 0.4s linear;
       transition-property: width, background-color;
     }
   }
 
   .progress-moved .progress-bar {
+    width: 20%;
     // infinite 动画无限次播放
     animation: progress 3s;
   }

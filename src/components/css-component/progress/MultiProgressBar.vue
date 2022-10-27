@@ -1,4 +1,4 @@
-<!-- 巡检统计，进度条 -->
+<!-- 多段进度条 -->
 <template>
     <div class="multi-progress-container" ref="chartRef" :style="{width:`${width}px`,height:`${height}px`}"></div>
 </template>
