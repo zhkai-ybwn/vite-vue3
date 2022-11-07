@@ -42,13 +42,26 @@ const routes = [
                 meta: { icon: 'icon-tupian' },
                 component: () => import('../views/css-demo/img-menu/index.vue'),
             },
-            {
-                path: 'progress-bar',
-                name: '进度条',
-                meta: { icon: 'icon-jindu' },
-                component: () => import('../views/css-demo/progress/index.vue'),
-            },
         ],
+    },
+    {
+        path: '/commom-components',
+        name: '常用组件',
+        component: AppLayout,
+        redirect: '/commom-components/swiper-list',
+        meta: { icon: 'Box' },
+        children: [{
+            path: 'swiper-list',
+            name: '轮播列表',
+            meta: { icon: 'icon-lunbobiaoge' },
+            component: () => import('../views/common-demo/swiper-list/index.vue'),
+        },
+        {
+            path: 'progress-bar',
+            name: '进度条',
+            meta: { icon: 'icon-jindu' },
+            component: () => import('../views/common-demo/progress/index.vue'),
+        }],
     },
 ];
 

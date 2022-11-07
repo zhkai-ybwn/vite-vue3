@@ -5,9 +5,9 @@
     </div>
 </template>
 <script>
-import ProgressBarLine from '../../../components/css-component/progress/ProgressBarLine.vue';
-import MultiProgressBar from '../../../components/css-component/progress/MultiProgressBar.vue';
-import CircularProgressBarVue from '../../../components/css-component/progress/CircularProgressBar.vue';
+import ProgressBarLine from '../../../components/common-components/progress/ProgressBarLine.vue';
+import MultiProgressBar from '../../../components/common-components/progress/MultiProgressBar.vue';
+import CircularProgressBarVue from '../../../components/common-components/progress/CircularProgressBar.vue';
 import Shuffling from '../../../components/css-component/Shuffling.vue';
 
 export default ({
