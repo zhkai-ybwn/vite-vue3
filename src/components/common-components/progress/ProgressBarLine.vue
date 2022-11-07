@@ -1,4 +1,7 @@
-// 进度条
+<!--
+ * @Description: 进度条
+ * @Author: zhangkai
+-->
 <template>
     <div class="container" :style="{width: width + 'px'}">
         <div class="progress progress-moved" :style="{backgroundColor: colorBack}">

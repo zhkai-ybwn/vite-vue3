@@ -1,5 +1,10 @@
+/*
+ * @Description: iconfont自定义图标
+ * @Author: zhangkai
+ */
 /* eslint-disable guard-for-in */
 /* eslint-disable no-restricted-syntax */
+
 // 自动加载svg中所有的图标
 let svgIcons = [];
 const svgFiles = import.meta.globEager('../../assets/icons/*.svg'); // webpack方法

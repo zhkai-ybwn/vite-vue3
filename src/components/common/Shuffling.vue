@@ -1,3 +1,7 @@
+<!--
+ * @Description: 轮播组件，同类多种组件循环展示
+ * @Author: zhangkai
+-->
 <template>
     <div class="container">
         <div class="right-component">

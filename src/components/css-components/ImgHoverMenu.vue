@@ -1,3 +1,7 @@
+<!--
+ * @Description: 图片菜单
+ * @Author: zhangkai
+-->
 <template>
     <div class="img-container">
         <figure>

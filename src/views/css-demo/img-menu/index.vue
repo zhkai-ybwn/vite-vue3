@@ -1,10 +1,14 @@
+<!--
+ * @Description: 图片菜单页面
+ * @Author: zhangkai
+-->
 <template>
     <div class="view-img-menu">
         <ImgHoverMenu></ImgHoverMenu>
     </div>
 </template>
 <script>
-import ImgHoverMenu from '../../../components/css-component/ImgHoverMenu.vue';
+import ImgHoverMenu from '../../../components/css-components/ImgHoverMenu.vue';
 
 export default ({
     components: {

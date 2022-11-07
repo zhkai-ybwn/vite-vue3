@@ -1,4 +1,7 @@
-<!-- 多段进度条 -->
+<!--
+ * @Description: 多段进度条
+ * @Author: zhangkai
+-->
 <template>
     <div class="multi-progress-container" ref="chartRef" :style="{width:`${width}px`,height:`${height}px`}"></div>
 </template>

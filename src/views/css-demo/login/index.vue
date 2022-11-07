@@ -1,10 +1,14 @@
+<!--
+ * @Description: login view页面
+ * @Author: zhangkai
+-->
 <template>
     <div class="view-login">
         <LoginHover ></LoginHover>
     </div>
 </template>
 <script>
-import LoginHover from '../../../components/css-component/LoginHover.vue';
+import LoginHover from '../../../components/css-components/LoginHover.vue';
 
 export default ({
     components: {

@@ -1,10 +1,14 @@
+<!--
+ * @Description: 旋转卡片view页面
+ * @Author: zhangkai
+-->
 <template>
     <div class="view-card">
         <ThreeDRotation></ThreeDRotation>
     </div>
 </template>
 <script>
-import ThreeDRotation from '../../../components/css-component/ThreeDRotation.vue';
+import ThreeDRotation from '../../../components/css-components/ThreeDRotation.vue';
 
 export default ({
     components: {

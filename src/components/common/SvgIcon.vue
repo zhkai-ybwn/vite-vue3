@@ -1,4 +1,7 @@
-// https://developer.aliyun.com/article/975701
+<!--
+ * @Description: 自定义图标 https://developer.aliyun.com/article/975701
+ * @Author: zhangkai
+-->
 <template>
     <svg :class="svgClass" aria-hidden="true">
         <use :xlink:href="iconClassName" :fill="color"></use>

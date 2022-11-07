@@ -1,3 +1,7 @@
+<!--
+ * @Description: 轮播列表view页面
+ * @Author: zhangkai
+-->
 <template>
     <div class="view-swiper">
         <SwiperList></SwiperList>

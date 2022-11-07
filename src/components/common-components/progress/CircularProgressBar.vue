@@ -1,4 +1,7 @@
-// 圆环进度条
+<!--
+ * @Description: 圆环进度条
+ * @Author: zhangkai
+-->
 <template>
     <div>
         <div class="circular-progress-container" ref="chartRef" :style="{width:`${width}px`,height:`${height}px`}"></div>

@@ -1,3 +1,7 @@
+<!--
+ * @Description: 进度条view页面
+ * @Author: zhangkai
+-->
 <template>
     <div class="view-login">
         <Shuffling :list="list">
@@ -5,10 +9,14 @@
     </div>
 </template>
 <script>
+// 普通进度条组件
 import ProgressBarLine from '../../../components/common-components/progress/ProgressBarLine.vue';
+// 多段进度条组件
 import MultiProgressBar from '../../../components/common-components/progress/MultiProgressBar.vue';
+// 圆环进度条组件
 import CircularProgressBarVue from '../../../components/common-components/progress/CircularProgressBar.vue';
-import Shuffling from '../../../components/css-component/Shuffling.vue';
+// 循环展示组件
+import Shuffling from '../../../components/common/Shuffling.vue';
 
 export default ({
     components: {
