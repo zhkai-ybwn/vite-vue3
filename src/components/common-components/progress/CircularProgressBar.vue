@@ -147,8 +147,7 @@ export default {
         });
         const initChart = () => {
             chart = echarts.init(chartRef.value);
-            const chartData = data.value;
-            const option = getOption(chartData);
+            const option = getOption();
             chart.setOption(option, true);
         };
         watch(() => props.data, async (val) => {

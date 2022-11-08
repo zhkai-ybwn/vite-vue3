@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "3847149",
+      "name": "比例饼图",
+      "font_class": "bilibingtu",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "3860857",
+      "name": "折线图",
+      "font_class": "zhexiantu",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "1983879",
+      "name": "柱状图",
+      "font_class": "zhuzhuangtu",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
       "icon_id": "10949570",
       "name": "轮播表格",
       "font_class": "lunbobiaoge",

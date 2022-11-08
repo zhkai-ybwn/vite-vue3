@@ -63,6 +63,29 @@ const routes = [
             component: () => import('../views/common-demo/progress/index.vue'),
         }],
     },
+    {
+        path: '/echarts',
+        name: '图表案例',
+        component: AppLayout,
+        redirect: '/echarts/line-chart',
+        meta: { icon: 'DataLine' },
+        children: [{
+            path: 'line-chart',
+            name: '折线图',
+            meta: { icon: 'icon-zhexiantu' },
+            component: () => import('../views/echarts-demo/line-chart/index.vue'),
+        }, {
+            path: 'bar-chart',
+            name: '柱形图',
+            meta: { icon: 'icon-zhuzhuangtu' },
+            component: () => import('../views/echarts-demo/line-chart/index.vue'),
+        }, {
+            path: 'pie-chart',
+            name: '饼图',
+            meta: { icon: 'icon-bilibingtu' },
+            component: () => import('../views/echarts-demo/line-chart/index.vue'),
+        }],
+    },
 ];
 
 const router = createRouter({

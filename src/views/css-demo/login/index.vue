@@ -31,6 +31,9 @@ export default ({
   /* 限免两个属性是让body里的子类居中 */
   justify-content: center;
   align-items: center;
-  background-color: #e5cab9;
+
+  /* 背景渐变色 */
+  background-image: linear-gradient(200deg, #5ee7df, #b490ca);
+  perspective: 1000px;
 }
 </style>
