@@ -1,10 +1,10 @@
 <!--
- * @Description: 基础折线图
+ * @Description: 基础面积图
  * @Author: zhangkai
 -->
 <template>
-    <div class="basic-line-chart">
-        <div ref="chartRef" :style="{width:`${width}px`,height:`${height}px`}"></div>
+    <div class="basic-area-chart">
+        <div ref="chartRef" :style="{width: `${width}px`, height: `${height}px`}"></div>
     </div>
 </template>
 
@@ -45,6 +45,7 @@ export default ({
             series.push({
                 data: props.data.yData,
                 type: 'line',
+                areaStyle: {},
             });
             return series;
         };

@@ -5,81 +5,23 @@
 <template>
     <div class="view-line-chart">
         <BasicLineChart></BasicLineChart>
-        <BasicLineChart :config="smoothConfigObj"></BasicLineChart>
-        <BasicLineChart :config="basicAreaConfigObj"></BasicLineChart>
-        <BasicLineChart :config="stackedLineConfigObj"></BasicLineChart>
+        <SmoothedLineChart></SmoothedLineChart>
+        <BasicAreaChart></BasicAreaChart>
+        <BasicLineChart></BasicLineChart>
     </div>
 </template>
 <script>
-import { reactive, toRefs } from 'vue';
 import BasicLineChart from '../../../components/echarts-components/line-chart/BasicLineChart.vue';
+import SmoothedLineChart from '../../../components/echarts-components/line-chart/SmoothedLineChart.vue';
+import BasicAreaChart from '../../../components/echarts-components/line-chart/BasicAreaChart.vue';
 
 export default ({
     components: {
         BasicLineChart,
+        SmoothedLineChart,
+        BasicAreaChart,
     },
     setup() {
-        const data = reactive({
-            // 是否平滑曲线显示
-            smoothConfigObj: {
-                smooth: true,
-            },
-            // 区域填充样式
-            basicAreaConfigObj: {
-                areaStyle: {
-                    // 填充颜色
-                    color: '#a1d8b1',
-                    // 图形区域起始位置
-                    origin: 'auto',
-                    // 图形阴影的模糊大小
-                    shadowBlur: 10,
-                    // 阴影颜色
-                    shadowColor: '#edfcc2',
-                    // 阴影水平方向上的偏移距离
-                    shadowOffsetX: 0,
-                    // 阴影垂直方向上的偏移距离
-                    shadowOffsetY: 0,
-                    // 图形透明度
-                    opacity: 0.5,
-                },
-            },
-            // 折线图堆叠
-            stackedLineConfigObj: {
-                // 标题
-                title: {
-                    // 组件ID
-                    id: '',
-                    // 是否显示标题组件
-                    show: true,
-                    // 主标题文本，支持使用 \n 换行
-                    text: 'Stacked Line',
-                    // 主标题文本超链接
-                    link: '',
-                    // 指定窗口打开主标题超链接
-                    target: '',
-                    textStyle: {
-                        // 主标题文字颜色
-                        color: '#60bdaf',
-                        // 主标题文字字体的风格
-                        fontStyle: 'oblique',
-                        // 主标题文字字体的粗细
-                        fontWeight: 400,
-                        // 主标题文字的字体系列
-                        fontFamily: '仓耳渔阳体 W02',
-                        fontSize: 16,
-                    },
-                },
-                // 提示框组件
-                tooltip: {
-                    trigger: 'axis',
-                },
-                // 图例组件
-                legend: {
-                    data: ['Email'],
-                },
-            },
-        });
-        return { ...toRefs(data) };
     },
 });
 </script>

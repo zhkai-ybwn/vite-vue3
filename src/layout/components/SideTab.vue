@@ -114,6 +114,7 @@ export default ({
       .active {
         position: relative;
         color: #e0a419;
+        min-width: 80px;
 
         &::after {
           position: absolute;

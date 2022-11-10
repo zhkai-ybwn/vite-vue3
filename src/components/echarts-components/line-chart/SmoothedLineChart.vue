@@ -1,9 +1,9 @@
 <!--
- * @Description: 基础折线图
+ * @Description: 基础平滑折线图
  * @Author: zhangkai
 -->
 <template>
-    <div class="basic-line-chart">
+    <div class="smoothed-line-chart">
         <div ref="chartRef" :style="{width:`${width}px`,height:`${height}px`}"></div>
     </div>
 </template>
@@ -45,6 +45,7 @@ export default ({
             series.push({
                 data: props.data.yData,
                 type: 'line',
+                smooth: true,
             });
             return series;
         };
