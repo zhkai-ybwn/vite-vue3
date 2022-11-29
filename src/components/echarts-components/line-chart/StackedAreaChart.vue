@@ -1,5 +1,9 @@
 <!--
- * @Description: 折现堆叠图
+ * @Description: 堆叠面积图
+ * @Author: zhangkai
+-->
+<!--
+ * @Description: 基础面积图
  * @Author: zhangkai
 -->
 <template>
@@ -53,6 +57,10 @@ export default ({
                     name: item.name,
                     type: 'line',
                     stack: 'Total',
+                    areaStyle: {},
+                    emphasis: {
+                        focus: 'series',
+                    },
                     data: item.data,
                 });
             });

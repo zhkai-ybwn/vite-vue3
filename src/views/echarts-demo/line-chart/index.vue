@@ -7,19 +7,24 @@
         <BasicLineChart></BasicLineChart>
         <SmoothedLineChart></SmoothedLineChart>
         <BasicAreaChart></BasicAreaChart>
-        <BasicLineChart></BasicLineChart>
+        <StackedLineChart></StackedLineChart>
+        <StackedAreaChart></StackedAreaChart>
     </div>
 </template>
 <script>
 import BasicLineChart from '../../../components/echarts-components/line-chart/BasicLineChart.vue';
 import SmoothedLineChart from '../../../components/echarts-components/line-chart/SmoothedLineChart.vue';
 import BasicAreaChart from '../../../components/echarts-components/line-chart/BasicAreaChart.vue';
+import StackedLineChart from '../../../components/echarts-components/line-chart/StackedLineChart.vue';
+import StackedAreaChart from '../../../components/echarts-components/line-chart/StackedAreaChart.vue';
 
 export default ({
     components: {
         BasicLineChart,
         SmoothedLineChart,
         BasicAreaChart,
+        StackedLineChart,
+        StackedAreaChart,
     },
     setup() {
     },
