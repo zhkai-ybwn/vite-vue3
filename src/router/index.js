@@ -48,6 +48,12 @@ const routes = [
                 meta: { icon: 'icon-tubiaozhizuomoban' },
                 component: () => import('../views/css-demo/loading/index.vue'),
             },
+            {
+                path: 'middle',
+                name: '居中方式',
+                meta: { icon: 'icon-juzhongbuju' },
+                component: () => import('../views/css-demo/middle/index.vue'),
+            },
         ],
     },
     {

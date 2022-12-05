@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "19220952",
+      "name": "居中布局",
+      "font_class": "juzhongbuju",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
       "icon_id": "11741800",
       "name": "加载中",
       "font_class": "tubiaozhizuomoban",

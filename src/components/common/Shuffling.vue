@@ -4,10 +4,10 @@
 -->
 <template>
     <div class="container">
-        <div class="right-component">
+        <div class="left-component">
             <component :is="currentComponent"></component>
         </div>
-        <div class="left-name">
+        <div class="right-name">
             <span :class="[currentComponent === item.component ? 'active':'']" v-for="(item, index) in list" :key="index" @mousemove="showToBigBox(item)">{{item.name}}</span>
         </div>
     </div>
@@ -57,15 +57,15 @@ export default ({
   // 超出容器部分隐藏
   overflow: hidden;
 
-  .right-component {
+  .left-component {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .left-name {
+  .right-name {
     display: flex;
-    width: 160px;
+    width: fit-content;
     flex-direction: column;
     background: linear-gradient(to bottom, transparent, #16161a 22%, #16161a 81%, transparent);
 
