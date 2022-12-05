@@ -42,6 +42,12 @@ const routes = [
                 meta: { icon: 'icon-tupian' },
                 component: () => import('../views/css-demo/img-menu/index.vue'),
             },
+            {
+                path: 'loading',
+                name: '加载动画',
+                meta: { icon: 'icon-tubiaozhizuomoban' },
+                component: () => import('../views/css-demo/loading/index.vue'),
+            },
         ],
     },
     {

@@ -9,6 +9,7 @@
         <BasicAreaChart></BasicAreaChart>
         <StackedLineChart></StackedLineChart>
         <StackedAreaChart></StackedAreaChart>
+        <GradientStackedAreaChart></GradientStackedAreaChart>
     </div>
 </template>
 <script>
@@ -17,6 +18,7 @@ import SmoothedLineChart from '../../../components/echarts-components/line-chart
 import BasicAreaChart from '../../../components/echarts-components/line-chart/BasicAreaChart.vue';
 import StackedLineChart from '../../../components/echarts-components/line-chart/StackedLineChart.vue';
 import StackedAreaChart from '../../../components/echarts-components/line-chart/StackedAreaChart.vue';
+import GradientStackedAreaChart from '../../../components/echarts-components/line-chart/GradientStackedAreaChart.vue';
 
 export default ({
     components: {
@@ -25,6 +27,7 @@ export default ({
         BasicAreaChart,
         StackedLineChart,
         StackedAreaChart,
+        GradientStackedAreaChart,
     },
     setup() {
     },

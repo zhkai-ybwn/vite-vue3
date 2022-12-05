@@ -1,9 +1,9 @@
 <!--
- * @Description: 折线堆叠图
+ * @Description: 渐变堆叠面积图
  * @Author: zhangkai
 -->
 <template>
-    <div class="stacked-area-chart">
+    <div class="gradient-area-chart">
         <div ref="chartRef" :style="{width: `${width}px`, height: `${height}px`}"></div>
     </div>
 </template>
@@ -34,11 +34,11 @@ export default ({
                 xData: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
                 // y轴数据
                 yData: [
-                    { name: 'Email', data: [120, 132, 101, 134, 90, 230, 210] },
-                    { name: 'Union Ads', data: [220, 182, 191, 234, 290, 330, 310] },
-                    { name: 'Video Ads', data: [150, 232, 201, 154, 190, 330, 410] },
-                    { name: 'Direct', data: [320, 332, 301, 334, 390, 330, 320] },
-                    { name: 'Search Engine', data: [820, 932, 901, 934, 1290, 1330, 1320] },
+                    { name: 'Email', data: [140, 232, 101, 264, 90, 340, 250] },
+                    { name: 'Union Ads', data: [120, 282, 111, 234, 220, 340, 310] },
+                    { name: 'Video Ads', data: [320, 132, 201, 334, 190, 130, 220] },
+                    { name: 'Direct', data: [220, 402, 231, 134, 190, 230, 120] },
+                    { name: 'Search Engine', data: [220, 302, 181, 234, 210, 290, 150] },
                 ],
             }),
         },
@@ -53,6 +53,23 @@ export default ({
                     name: item.name,
                     type: 'line',
                     stack: 'Total',
+                    smooth: true,
+                    areaStyle: {
+                        opacity: 0.8,
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                            {
+                                offset: 0,
+                                color: 'rgb(128,255,165)',
+                            },
+                            {
+                                offset: 1,
+                                color: 'rgb(1,191,236)',
+                            },
+                        ]),
+                    },
+                    emphasis: {
+                        focus: 'series',
+                    },
                     data: item.data,
                 });
             });
@@ -68,6 +85,7 @@ export default ({
             // title: {
             //     text: 'Stacked Area Chart',
             // },
+            color: ['#80FFA5', '#00DDFF', '#37A2FF', '#FF0087', '#FFBF00'],
             tooltip: {
                 trigger: 'axis',
                 axisPointer: {

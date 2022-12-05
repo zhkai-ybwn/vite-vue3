@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "11741800",
+      "name": "加载中",
+      "font_class": "tubiaozhizuomoban",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
       "icon_id": "3847149",
       "name": "比例饼图",
       "font_class": "bilibingtu",
